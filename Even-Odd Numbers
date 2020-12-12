@@ -1,4 +1,4 @@
-#given no is even or odd
+#given number is even or odd
 
 num = int(input("Enter number: "))
 if(num % 2 == 0):
