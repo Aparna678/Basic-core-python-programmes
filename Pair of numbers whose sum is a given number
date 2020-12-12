@@ -1,0 +1,28 @@
+#binary search method
+#list of pair of numbers from a given list of numbers whose sum is given
+
+lst = [1, 5, 4, 6, 23, 0, 3, 6, 20, 16, 17, 7, 8, 15, 9, 67, 13, 14, 10, 32, 18, 11, 12, 25]
+print("Given list of numbers are : ", lst)
+sum = int(input("Enter the sum : "))
+lst.sort()
+res = []
+low, upper = 0, len(lst)-1
+flg = 0
+while low < upper:
+    mid = (low + upper)//2
+    if lst[mid] <= sum:
+        if lst[mid] + lst[low] == sum:
+            res.append((lst[low], lst[mid]))
+            flg = 1
+            low += 1
+            upper -= 1
+        elif lst[mid] + lst[low] < sum:
+            low += 1
+        elif lst[mid] + lst[low] > sum:
+            upper -= 1
+    else:
+        upper -= 1
+if flg == 1:
+    print(res)
+else:
+    print("No values")
