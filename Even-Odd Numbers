@@ -1,0 +1,37 @@
+#given no is even or odd
+
+num = int(input("Enter number: "))
+if(num % 2 == 0):
+    print("Even")
+else:
+    print("Odd")
+    
+#listing all even and odd numbers separately from range 1 to 100
+
+lst = []
+for i in range(1, 101):
+    lst.append(i)
+print(lst)
+even = []
+odd = []
+for i in lst:
+    if i % 2 == 0:
+        even.append(i)
+    else:
+        odd.append(i)
+print(even)
+print(odd)
+
+#listing all even and odd numbers separatly from an input range of numbers
+
+ll = int(input("Enter the lower limit number: "))     #lower limit of range
+ul = int(input("Enter the upper limit number: "))     #upper limit of range
+even = []
+odd = []
+for i in range(ll, ul+1):
+    if(i%2==0):
+        even.append(i)
+    else:
+        odd.append(i)
+print("Even numbers are : ", even)
+print("odd numbers are : ", odd)
