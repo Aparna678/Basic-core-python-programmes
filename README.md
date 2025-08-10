@@ -38,4 +38,8 @@
 |  |
 | ------- |
 | [2215-finding-3-digit-even-numbers](https://github.com/Aparna678/Basic-core-python-programmes/tree/master/2215-finding-3-digit-even-numbers) |
+## Database
+|  |
+| ------- |
+| [0175-combine-two-tables](https://github.com/Aparna678/Basic-core-python-programmes/tree/master/0175-combine-two-tables) |
 <!---LeetCode Topics End-->
